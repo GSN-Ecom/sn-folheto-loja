@@ -1,0 +1,2870 @@
+:root {
+/*red site*/
+	--lp-folheto-SN--red-01: #DA291C;
+	--lp-folheto-SN--red-02: #BC272C;
+	--lp-folheto-SN--red-03: #802F2D;
+/*orange clube supernosso*/
+	--lp-folheto-SN--orange-01: #FF821E;
+	--lp-folheto-SN--orange-02: #FEAF6D;
+	--lp-folheto-SN--orange-03: #FEC593;
+	--lp-folheto-SN--orange-04: #FED9B7;
+	--lp-folheto-SN--orange-05: #FEE1C6;
+/*gray support*/
+	--lp-folheto-SN--gray-01: #000;
+	--lp-folheto-SN--gray-02: #272B30;
+	--lp-folheto-SN--gray-03: #5E5E5E;
+	--lp-folheto-SN--gray-04: #CFD4D8;
+	--lp-folheto-SN--gray-05: #F2F3F5;
+	--lp-folheto-SN--gray-06: #FCFCFC;
+/*white support*/
+	--lp-folheto-SN--white-01: #FFFFFF;
+/*yellow support*/
+	--lp-folheto-SN--yellow-01: #FFD100;
+	--lp-folheto-SN--yellow-02: #FFFBDB;
+	--lp-folheto-SN--yellow-03: #C4A300;
+/*green support*/
+	--lp-folheto-SN--green-01: #33BB33;
+}
+/* Estilos para o overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 999999999;
+        }
+        .overlay img {
+            max-height: 96%;
+            max-width: 90%;
+			border-radius: 12px;
+        	border: 1px solid var(--lp-folheto-SN--gray-04);
+        }
+        .overlay .close-btn {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 24px;
+            height: 24px;
+            padding: 8px;
+            border-radius: 999px;
+            border: 2px solid var(--lp-folheto-SN--white-01);
+            background: var(--lp-folheto-SN--red-01);
+            cursor: pointer;
+        }
+
+		#container-carrosseis_3,
+		#container-carrosseis_2, 
+		#container-carrosseis {
+			width: 100%;
+		}
+
+/*Desktop, breakpoint*/
+	@media (min-width: 1024px) {
+	/* header */
+        .lp-folheto-AP--header {
+        	display: flex;
+        	height: 200px;
+        	flex-direction: column;
+        	align-items: center;
+        	align-self: stretch;
+        }
+        .lp-folheto-AP--header .image {
+        	display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			flex: 1 0 0;
+			align-self: stretch;
+        	height: 400px;
+        	padding: 0px 15%;
+        	border-top: 1px solid var(--lp-folheto-SN--white-01);
+        	background: url('../imgs/pattern/lp-folheto-SN_pattern-banner-header.svg');
+        	background-size: 240% auto;
+        	background-position: center;
+        	background-repeat: no-repeat;
+        	margin-bottom: -4px;
+
+        }
+        .lp-folheto-AP--header .image .content-banner {
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        	gap: 8px;
+        	flex: 1 0 0;
+        	align-self: center;
+        }
+        .lp-folheto-AP--header .image .content-banner img {
+        	width: 108px;
+        	height: auto;
+        }
+        .lp-folheto-AP--header .image .content-banner .title {
+        	display: flex;
+        	flex-direction: column;
+        	justify-content: center;
+        	align-items: flex-start;
+        	gap: 4px;
+        	flex: 1 0 0;
+        	align-self: stretch;
+        }
+        .lp-folheto-AP--header .image .content-banner .title h1.text-lp {
+        	font-size: 24px;
+        	line-height: 26px;
+        }
+        .lp-folheto-AP--header .image .content-banner .title .label {
+        	display: flex;
+        	justify-content: center;
+        	align-items: flex-start;
+        	gap: 8px;
+        	align-self: stretch;
+        }
+	/* block btn whatsapp */
+		.row--btn-whatsapp {
+			display: flex;
+			padding: 12px 15%;
+			margin-top: -4px;
+			justify-content: center;
+			align-items: center;
+			gap: 24px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-02)
+		}
+		.row--btn-whatsapp .text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.row--btn-whatsapp .text p.text-lp-paragraph {
+			font-size: 14px;
+		}
+		.row--btn-whatsapp .text p.text-lp-paragraph span {
+			font-size: 14px;
+		}
+		.row--btn-whatsapp a {
+			text-decoration: none;
+		}
+		.row--btn-whatsapp a .lp-folheto--btn-whatsapp {
+			display: flex;
+			padding: 8px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			border-radius: 8px;
+			background: var(--lp-folheto-SN--green-01);
+		}
+	/* block btn share file */
+		.row-share-file {
+			display: flex;
+			padding: 12px 15% 48px 15%;
+			justify-content: center;
+			align-items: center;
+			gap: 24px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.row-share-file .text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.row-share-file .text p.text-lp-paragraph {
+			color: var(--lp-folheto-SN--gray-03);
+		}
+		.row-share-file .text p.text-lp-paragraph span {
+			color: var(--lp-folheto-SN--gray-03);
+		}
+		.row-share-file a {
+			text-decoration: none;
+		}
+		.row-share-file a .lp-folheto--btn-whatsapp {
+			display: flex;
+			padding: 8px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			border-radius: 8px;
+			border: 1px solid var(--lp-folheto-SN--red-02);
+			background: var(--lp-folheto-SN--red-02);
+		}
+		.row-share-file a .lp-folheto--btn-whatsapp--download {
+			display: flex;
+			padding: 8px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			border-radius: 8px;
+			border: 1px solid var(--lp-folheto-SN--gray-03);
+			background: var(--lp-folheto-SN--gray-03);
+		}
+	/* block ancoras */
+		.lp-folheto-AP--row-anchor {
+			display: flex;
+			padding: 40px 10% 16px 10%;;
+			align-items: center;
+			gap: 24px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--row-anchor .col {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+		.lp-folheto-AP--row-anchor .col a {
+			text-decoration: none;
+			width: 156px;
+		}
+		.lp-folheto-AP--row-anchor .col a .sn--btn-mini {
+			display: flex;
+			height: 40px;
+			width: 136px;
+			padding: 0px 6px 0px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			flex: 1 0 0;
+			border-radius: 8px;
+			border: 1px solid var(--lp-folheto-SN--gray-04);
+			background: var(--lp-folheto-SN--gray-06);
+		}
+	/* folheto */
+		.section-folheto-body {
+			display: flex;
+			width: 100%;
+			padding: 0px 0px 16px 0px;
+			flex-direction: column;
+			align-items: center;
+			gap: 16px;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			margin: 0px;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn 
+		.cards-carrossel-folheto-loja-fisica-sn {
+			display: flex;
+		  	overflow-x: auto;
+		 	scroll-snap-type: x mandatory;
+		 	scrollbar-width: none;
+		  	-ms-overflow-style: none;
+		  	gap: 16px;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn 
+		.cards-carrossel-folheto-loja-fisica-sn .image-pagina-folheto-loja-fisica-sn {
+			width: auto;
+			height: auto;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn 
+		.cards-carrossel-folheto-loja-fisica-sn .image-pagina-folheto-loja-fisica-sn 
+		.page-folheto-image {
+			border-radius: 12px;
+			border: 1px solid var(--lp-folheto-SN--gray-04);
+			background: #FFF;
+			width: 30vw;
+			margin: 16px 0;
+			cursor: pointer;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn .scrollLeft {
+			z-index: 9;
+			min-width: 16px;
+		  	min-height: 16px;
+		  	max-height: 40px;
+		  	max-width: 40px;
+		  	display: flex;
+			padding: 10px;
+			margin-left: 4px;
+			margin-right: -12px;
+			cursor: pointer;
+			border-radius: 999px!important;
+			background: var(--lp-folheto-SN--white-01);
+			border: 1px solid var(--lp-folheto-SN--gray-03)!important;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn .scrollRight {
+			z-index: 9;
+		  	min-width: 16px;
+		  	min-height: 16px;
+		  	max-height: 40px;
+		  	max-width: 40px;
+		  	display: flex;
+		  	margin-left: -12px;
+			margin-right: 4px;
+			padding: 10px;
+			cursor: pointer;
+			border-radius: 999px!important;
+			background: var(--lp-folheto-SN--white-01);
+			border: 1px solid var(--lp-folheto-SN--gray-03)!important;
+		}
+		.section-folheto-body .supporting-text {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			align-self: stretch;
+		}
+		.section-folheto-body .supporting-text p.text-lp-label-default {
+			color: var(--lp-folheto-SN--gray-03);
+			flex: 1 0 0;
+		}
+	/* video folheto */
+		.lp-folheto-AP--row-video-folheto {
+			display: flex;
+			padding: 32px 24px 48px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+			background: url('../imgs/pattern/bg-lp-folheto-AP-row-video-folheto.webp');
+        	background-size: 110% auto;
+        	background-position: center top;
+        	background-repeat: no-repeat;
+		}
+		.lp-folheto-AP--row-video-folheto #lp-folheto-AP_VideoVT {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-self: stretch;
+			border-radius: 12px;
+		}
+		.lp-folheto-AP--row-video-folheto #lp-folheto-AP_VideoVT iframe {
+			width: 570px;
+        	height: 320px;
+			border-radius: 12px;
+		}
+	/* clube supernosso */
+		.lp-folheto-AP--hero-image--title-content {
+			display: flex;
+			padding: 64px 10%;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 40px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--hero-image--title-content .image {
+			display: flex;
+			height: 240px;
+			width: 280px;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 24px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .image .lp-folheto-AP--mockup-clube-ap {
+			width: 400px;
+			height: 260px;
+			flex-shrink: 0;
+			background: url('../imgs/png/bg-image--clube-ap-mockup.png');
+			background-size: 100% auto;
+        	background-position: center top;
+        	background-repeat: no-repeat;
+		}
+		.lp-folheto-AP--hero-image--title-content .text {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 24px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text .text {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text .text p.text-lp-paragraph {
+			align-self: stretch;
+			color: var(--lp-folheto-SN--gray-03);
+			text-align: center;
+			font-size: 20px;
+			line-height: 120%;
+
+		}
+		.lp-folheto-AP--hero-image--title-content .text .text p.text-lp-paragraph span {
+			font-size: 20px;
+			line-height: 120%;
+			font-weight: 700;
+			color: #FF821E;
+		}
+		.lp-folheto-AP--hero-image--title-content .text .row--first-order-coupon {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			align-self: stretch;
+			border-radius: 12px;
+			border: 1px solid var(--lp-folheto-SN--orange-05);
+			background: var(--lp-folheto-SN--white-01);
+			box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+			margin: 0 64px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text .row--first-order-coupon .col {
+			display: flex;
+			padding: 32px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+			border-radius: 12px 0px 0px 12px;
+			border-right: 1px dashed var(--lp-folheto-SN--orange-05);
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 12px;
+			align-self: stretch;
+			flex-direction: row;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .icon-image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .icon-image svg {
+			width: 48px;
+			height: 48px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .text h2.text-lp {
+			font-size: 22px;
+			color: #FF821E;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 30px; /* 120% */
+			text-align: left;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .text p.text-lp-paragraph {
+			align-self: stretch;
+			font-size: 14px;
+			line-height: 140%;
+			text-align: left;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon {
+			display: flex;
+			min-width: 240px;
+			padding: 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 16px;
+			align-self: stretch;
+			border-radius: 8px;
+			border: 1px dashed var(--lp-folheto-SN--yellow-03);
+			background: var(--lp-folheto-SN--yellow-02);
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			flex: 1 0 0;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text p.text-lp-paragraph {
+			color: var(--lp-folheto-SN--gray-03);
+			text-align: center;
+			padding-top: 4px;
+			font-size: 14px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text h2.text-lp {
+			color: var(--lp-folheto-SN--gray-02);
+			font-family: Roboto, sans-serif;
+			text-align: center;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 120%;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text a {
+			text-decoration: none;
+			padding: 0;
+			margin: 0;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text a svg {
+			width: 24px;
+			height: 24px;
+			padding-bottom: 0px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .supporting-text {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .supporting-text p.text-lp-label-default {
+			flex: 1 0 0;
+			line-height: 140%;
+			color: #333;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col-qr-code {
+			display: flex;
+			padding: 20px 16px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 16px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col-qr-code .QrCode--clube-apoio {
+			display: flex;
+			align-items: flex-start;
+			gap: 8px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col-qr-code .QrCode--clube-apoio img {
+			width: 88px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col-qr-code .row {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 12px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col-qr-code .row p.text-lp-paragraph {
+			color: var(--lp-folheto-SN--gray-03);
+			text-align: center;
+			line-height: 12px;
+			font-weight: 700;
+			flex: 1 0 0;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .btn-download {
+			display: none;
+		}
+	/* nosso pay */
+		.lp-folheto-AP--section-card-nosso-pay {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .lp-folheto-nosso-pay {
+			position: absolute;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			align-self: stretch;
+			background: url('../imgs/pattern/lp-folheto-AP_pattern-nosso-pay.svg');
+			background-size: 100% auto;
+        	background-position: center top;
+        	background-repeat: no-repeat;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content {
+			display: flex;
+			padding: 8px 10% 48px 10%;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 40px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text {
+			display: flex;
+			max-width: 400px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 8px;
+			flex: 1 0 0;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text h2.text-lp {
+			align-self: stretch;
+			text-align: left;
+			line-height: 140%;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text p.text-lp-paragraph {
+			align-self: stretch;
+			text-align: left;
+			line-height: 140%;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code {
+			display: flex;
+			padding: 40px 0px 8px 0px;
+			align-items: flex-start;
+			gap: 24px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col {
+			display: flex;
+			width: 230px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 0px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col p.text-lp-paragraph {
+			align-self: stretch;
+			text-align: left;
+			color: var(--lp-folheto-SN--white-01);
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col .row {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay {
+			display: flex;
+			padding: 0px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay a {
+			text-decoration: none;
+			width: 100%;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay .supporting-text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay .supporting-text p.text-lp-label-default {
+			text-align: left;
+			align-self: stretch;
+			color: var(--lp-folheto-SN--gray-04);
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .QrCode img {
+			width: 88px;
+			margin-top: 24px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row {
+			display: flex;
+			max-width: 440px;
+			padding: 24px 0px 16px 0px;
+			align-items: flex-start;
+			gap: 8px;
+			flex: 1 0 0;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 10px;
+			flex: 1 0 0;
+			margin-top: 88px;
+			border-radius: 24px;
+			border: 1px solid var(--lp-folheto-SN--gray-03);
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lp-folheto-nosso-pay-apoio {
+			width: 100%;
+			max-width: 240px;
+			height: auto;
+			margin-top: -72px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np {
+			display: flex;
+			padding: 16px 24px 32px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item svg {
+			width: 32px;
+			height: 32px;
+			margin-top: -4px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item .text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			flex: 1 0 0;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item .text p.text-lp-paragraph {
+			font-size: 16px;
+			font-family: Museo, sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 120%;
+			color: var(--lp-folheto-SN--gray-02);
+			align-self: stretch;
+			text-align: left;
+			margin-bottom: -6px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item .text p.text-lp-label-small {
+			align-self: stretch;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			color: var(--lp-folheto-SN--gray-03);
+			text-align: left;
+		}
+	/* nossas lojas */
+		.lp-folheto-AP--carousel--store--mobile {
+			display: flex;
+			padding: 64px 10%;
+			flex-direction: column;
+			align-items: center;
+			gap: 16px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--carousel--store--mobile .section--title-carousel--personalized {
+			display: flex;
+			padding-top: 32px;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .section--title-carousel--personalized .title {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			flex: 1 0 0;
+			align-self: stretch;
+			padding: 0 40px;
+		}
+		.lp-folheto-AP--carousel--store--mobile .section--title-carousel--personalized 
+		.title .text-lp-paragraph {
+			align-self: stretch;
+			font-family: Museo, sans-serif;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 20px;
+			color: var(--lp-folheto-SN--gray-01);
+		}
+		.lp-folheto-AP--carousel--store--mobile .row {
+			display: flex;
+			padding: 12px 0px;
+			justify-content: center;
+			align-items: center;
+			align-self: stretch;
+			gap: 8px;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			flex: 1 0 0;
+			overflow-x: auto;
+			scroll-behavior: smooth;
+			padding: 8px 0px;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens::-webkit-scrollbar {
+			display: none;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card {
+			display: 0 0 80%;
+			max-width: 320px;
+  			min-width: 298px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-radius: 12px;
+			border: 1px solid var(--lp-folheto-SN--gray-05);
+			background: var(--lp-folheto-SN--white-01);
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .image-store {
+			display: flex;
+			height: 184px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .image-store #lp-folheto-AP_image-store {
+			width: 296px;
+			height: 180px;
+			border-radius: 12px 12px 0 0;
+			background-size: 100% auto;
+        	background-position: center top;
+        	background-repeat: no-repeat;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .title {
+			display: flex;
+			padding: 24px 24px 0px 24px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .title .text-lp-paragraph {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 1;
+			text-transform: lowercase;
+			flex: 1 0 0;
+			overflow: hidden;
+			color: var(--lp-folheto-SN--gray-02);
+			text-overflow: ellipsis;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 20px; /* 125% */
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description {
+			display: flex;
+			padding: 16px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+		}
+		#lp-folheto-AP_address-store {
+			height: 40px;
+		}
+		#lp-folheto-AP_time-store {
+			height: 24px;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--address,
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--time {
+			display: flex;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--address svg,
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--time svg {
+			width: 24px;
+			height: 24px;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--address .text-lp-paragraph,
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--time .text-lp-paragraph {
+			flex: 1 0 0;
+			text-transform: lowercase;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 16px;
+			color: var(--lp-folheto-SN--gray-03);
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers {
+			display: flex;
+			padding: 12px 0px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers a {
+			text-decoration: none;
+			width: 100%;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers a .route {
+			border-radius: 8px;
+			border: 1px solid #BC272C;
+			background: var(--lp-folheto-SN--white-01);
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers a .route .text-lp-button-default {
+			color: var(--lp-folheto-SN--red-02);
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers a .wpp-sac {
+			border-radius: 8px;
+			background: var(--lp-folheto-SN--green-01);
+			align-self: stretch;
+			text-align: center;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .scrollLeft {
+			z-index: 9;
+	        min-width: 12px;
+	        min-height: 12px;
+	        max-height: 16px;
+	        max-width: 16px;
+	        display: flex;
+	        margin-left: -4px;
+	        margin-right: 4px;
+	        padding: 8px;
+	        cursor: pointer;
+	        border-radius: 999px !important;
+	        background: var(--lp-folheto-SN--white-01);
+	        border: 1px solid var(--lp-folheto-SN--gray-03) !important;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .scrollRight {
+			z-index: 9;
+	        min-width: 12px;
+	        min-height: 12px;
+	        max-height: 16px;
+	        max-width: 16px;
+	        display: flex;
+	        margin-right: -4px;
+	        margin-left: 4px;
+	        padding: 8px;
+	        cursor: pointer;
+	        border-radius: 999px !important;
+	        background: var(--lp-folheto-SN--white-01);
+	        border: 1px solid var(--lp-folheto-SN--gray-03) !important;
+		}
+	/* botão fixo */
+		.btn--bottom-bar {
+			display: none;
+		}
+	}
+        
+
+/*Tablet, breakpoint*/
+    @media (min-width: 768px) and (max-width: 1023px){
+	/* overlay image */
+		.overlay img {
+		    max-height: 75%;
+    		margin-top: -72px;
+			border-radius: 12px;
+		   	border: 1px solid var(--lp-folheto-SN--gray-04);
+		}
+	/* header */
+        .lp-folheto-AP--header {
+        	display: flex;
+        	height: 200px;
+        	flex-direction: column;
+        	align-items: center;
+        	align-self: stretch;
+        }
+        .lp-folheto-AP--header .image {
+        	display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			flex: 1 0 0;
+			align-self: stretch;
+        	height: 400px;
+        	padding: 0px 15%;
+        	border-top: 1px solid var(--lp-folheto-SN--white-01);
+        	background: url('../imgs/pattern/lp-folheto-SN_pattern-banner-header.svg');
+        	background-size: 240% auto;
+        	background-position: center top;
+        	background-repeat: no-repeat;
+        	margin-bottom: 0;
+
+        }
+        .lp-folheto-AP--header .image .content-banner {
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        	gap: 8px;
+        	flex: 1 0 0;
+        	align-self: stretch;
+        }
+        .lp-folheto-AP--header .image .content-banner img {
+        	width: 108px;
+        	height: auto;
+        }
+        .lp-folheto-AP--header .image .content-banner .title {
+        	display: flex;
+        	flex-direction: column;
+        	justify-content: center;
+        	align-items: flex-start;
+        	gap: 4px;
+        	flex: 1 0 0;
+        	align-self: stretch;
+        }
+        .lp-folheto-AP--header .image .content-banner .title h1.text-lp {
+        	font-size: 24px;
+        	line-height: 26px;
+        }
+        .lp-folheto-AP--header .image .content-banner .title .label {
+        	display: flex;
+        	justify-content: center;
+        	align-items: flex-start;
+        	gap: 8px;
+        	align-self: stretch;
+        }
+	/* block btn whatsapp */
+		.row--btn-whatsapp {
+			display: flex;
+			padding: 24px 15%;
+			align-items: center;
+			gap: 16px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-02)
+		}
+		.row--btn-whatsapp .text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			flex: 1 0 0;
+		}
+		.row--btn-whatsapp .text p.text-lp-paragraph {
+			align-self: stretch;
+			font-size: 14px;
+		}
+		.row--btn-whatsapp .text p.text-lp-paragraph span {
+			font-size: 14px;
+		}
+		.row--btn-whatsapp a {
+			text-decoration: none;
+		}
+		.row--btn-whatsapp a .lp-folheto--btn-whatsapp {
+			display: flex;
+			padding: 8px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			border-radius: 8px;
+			background: var(--lp-folheto-SN--green-01);
+		}
+	/* block btn share file */
+		.row-share-file {
+			display: flex;
+			padding: 12px 15% 48px 15%;
+			justify-content: center;
+			align-items: center;
+			gap: 24px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.row-share-file .text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.row-share-file .text p.text-lp-paragraph {
+			color: var(--lp-folheto-SN--gray-03);
+		}
+		.row-share-file .text p.text-lp-paragraph span {
+			color: var(--lp-folheto-SN--gray-03);
+		}
+		.row-share-file a {
+			text-decoration: none;
+		}
+		.row-share-file a .lp-folheto--btn-whatsapp {
+			display: flex;
+			padding: 8px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			border-radius: 8px;
+			border: 1px solid var(--lp-folheto-SN--red-02);
+			background: var(--lp-folheto-SN--red-02);
+		}
+		.row-share-file a .lp-folheto--btn-whatsapp--download {
+			display: flex;
+			padding: 8px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			border-radius: 8px;
+			border: 1px solid var(--lp-folheto-SN--gray-03);
+			background: var(--lp-folheto-SN--gray-03);
+		}
+	/* block ancoras */
+		.lp-folheto-AP--row-anchor {
+			display: flex;
+			padding: 32px 64px;
+			align-items: center;
+			gap: 24px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--row-anchor .col {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+		.lp-folheto-AP--row-anchor .col a {
+			text-decoration: none;
+			width: 180px;
+		}
+		.lp-folheto-AP--row-anchor .col a .sn--btn-mini {
+			display: flex;
+			height: 40px;
+			min-width: 52px;
+			padding: 0px 6px 0px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			flex: 1 0 0;
+			border-radius: 8px;
+			border: 1px solid var(--lp-folheto-SN--gray-04);
+        	background: var(--lp-folheto-SN--gray-06);
+		}
+	/* folheto */
+		.section-folheto-body {
+			display: flex;
+			width: 100%;
+			padding: 0px 0px 16px 0px;
+			flex-direction: column;
+			align-items: center;
+			gap: 16px;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			margin: 0px;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn 
+		.cards-carrossel-folheto-loja-fisica-sn {
+			display: flex;
+		  	overflow-x: auto;
+		 	scroll-snap-type: x mandatory;
+		 	scrollbar-width: none;
+		  	-ms-overflow-style: none;
+		  	gap: 16px;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn 
+		.cards-carrossel-folheto-loja-fisica-sn .image-pagina-folheto-loja-fisica-sn {
+			width: auto;
+			height: auto;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn 
+		.cards-carrossel-folheto-loja-fisica-sn .image-pagina-folheto-loja-fisica-sn 
+		.page-folheto-image {
+			border-radius: 12px;
+			border: 1px solid var(--lp-folheto-SN--gray-04);
+			background: #FFF;
+			width: 50vw;
+			margin: 16px 0;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn .scrollLeft {
+			z-index: 9;
+			min-width: 16px;
+		  	min-height: 16px;
+		  	max-height: 40px;
+		  	max-width: 40px;
+		  	display: flex;
+			padding: 10px;
+			margin-left: 4px;
+			margin-right: -12px;
+			cursor: pointer;
+			border-radius: 999px!important;
+			background: var(--lp-folheto-SN--white-01);
+			border: 1px solid var(--lp-folheto-SN--gray-03)!important;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn .scrollRight {
+			z-index: 9;
+		  	min-width: 16px;
+		  	min-height: 16px;
+		  	max-height: 40px;
+		  	max-width: 40px;
+		  	display: flex;
+		  	margin-left: -12px;
+			margin-right: 4px;
+			padding: 10px;
+			cursor: pointer;
+			border-radius: 999px!important;
+			background: var(--lp-folheto-SN--white-01);
+			border: 1px solid var(--lp-folheto-SN--gray-03)!important;
+		}
+		.section-folheto-body .supporting-text {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			align-self: stretch;
+		}
+		.section-folheto-body .supporting-text p.text-lp-label-default {
+			color: var(--lp-folheto-SN--gray-03);
+			flex: 1 0 0;
+		}
+	/* video folheto */
+		.lp-folheto-AP--row-video-folheto {
+			display: flex;
+			padding: 32px 24px 48px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+			background: url('../imgs/pattern/bg-lp-folheto-AP-row-video-folheto.webp');
+        	background-size: 120% auto;
+        	background-position: center top;
+        	background-repeat: no-repeat;
+		}
+		.lp-folheto-AP--row-video-folheto #lp-folheto-AP_VideoVT {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-self: stretch;
+			border-radius: 12px;
+		}
+		.lp-folheto-AP--row-video-folheto #lp-folheto-AP_VideoVT iframe {
+			width: 440px;
+			height: 225px;
+			border-radius: 12px;
+		}
+	/* clube supernosso */
+		.lp-folheto-AP--hero-image--title-content {
+			display: flex;
+			padding: 64px 10%;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 24px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--hero-image--title-content .image {
+			display: flex;
+			height: 240px;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 24px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .image .lp-folheto-AP--mockup-clube-ap {
+			width: 400px;
+			height: 260px;
+			flex-shrink: 0;
+			background: url('../imgs/png/bg-image--clube-ap-mockup.png');
+			background-size: 100% auto;
+        	background-position: center top;
+        	background-repeat: no-repeat;
+		}
+		.lp-folheto-AP--hero-image--title-content .text {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 24px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text .text {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text .text p.text-lp-paragraph {
+			align-self: stretch;
+			color: var(--lp-folheto-SN--gray-03);
+			text-align: center;
+			font-size: 20px;
+			line-height: 120%;
+
+		}
+		.lp-folheto-AP--hero-image--title-content .text .text p.text-lp-paragraph span {
+			font-size: 20px;
+			line-height: 120%;
+			font-weight: 700;
+			color: var(--lp-folheto-SN--orange-01);
+		}
+		.lp-folheto-AP--hero-image--title-content .text .row--first-order-coupon {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			align-self: stretch;
+			border-radius: 12px;
+			border: 1px solid var(--lp-folheto-SN--orange-04);
+			background: var(--lp-folheto-SN--white-01);
+			box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+			margin: 0 64px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text .row--first-order-coupon .col {
+			display: flex;
+			padding: 32px 72px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+			border-radius: 12px 12px 0 0 ;
+			border-bottom: 1px dashed var(--lp-folheto-SN--orange-05);
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 12px;
+			align-self: stretch;
+			flex-direction: row;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .icon-image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .icon-image svg {
+			width: 48px;
+			height: 48px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .text h2.text-lp {
+			font-size: 28px;
+			color: var(--lp-folheto-SN--orange-01);
+			font-style: normal;
+			font-weight: 700;
+			line-height: 30px; /* 120% */
+			text-align: left;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .text p.text-lp-paragraph {
+			align-self: stretch;
+			font-size: 14px;
+			line-height: 140%;
+			color: var(--lp-folheto-SN--gray-03);
+			text-align: left;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon {
+			display: flex;
+			padding: 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 16px;
+			align-self: stretch;
+			border-radius: 8px;
+			border: 1px dashed var(--lp-folheto-SN--yellow-03);
+			background: var(--lp-folheto-SN--yellow-02);
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			flex: 1 0 0;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text p.text-lp-paragraph {
+			color: var(--lp-folheto-SN--gray-03);
+			text-align: center;
+			padding-top: 2px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text h2.text-lp {
+			color: var(--lp-folheto-SN--gray-02);
+			font-family: Roboto, sans-serif;
+			text-align: center;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 26px; /* 125% */
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text a {
+			text-decoration: none;
+			padding: 0;
+			margin: 0;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text a svg {
+			width: 24px;
+			height: 24px;
+			padding-bottom: 0px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .supporting-text {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .supporting-text p.text-lp-label-default {
+			flex: 1 0 0;
+			line-height: 140%;
+			color: var(--lp-folheto-SN--gray-02);
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col-qr-code {
+			display: none;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .btn-download {
+			display: flex;
+			padding: 12px 12px 16px 12px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 12px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .btn-download p.text-lp-paragraph {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 12px;
+			align-self: stretch;
+			flex: 1 0 0;
+			color: var(--lp-folheto-SN--gray-02);
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 16px; /* 114.286% */
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .btn-download .row {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .btn-download .row a {
+			width: 100%;
+			height: auto;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .btn-download .row a img {
+			width: 180px;
+		}
+	/* nosso pay */
+		.lp-folheto-AP--section-card-nosso-pay {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			align-self: stretch;
+			position: relative;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .lp-folheto-nosso-pay {
+			position: absolute;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			align-self: stretch;
+			background: url('../imgs/pattern/lp-folheto-AP_pattern-nosso-pay.svg');
+			background-size: 100% auto;
+        	background-position: center top;
+        	background-repeat: no-repeat;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content {
+			display: flex;
+			padding: 8px 10% 48px 10%;
+			align-items: flex-start;
+			gap: 40px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 8px;
+			flex: 1 0 0;
+			align-self: stretch;
+			width: 220px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text h2.text-lp {
+			align-self: stretch;
+			text-align: left;
+			line-height: 140%;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text p.text-lp-paragraph {
+			align-self: stretch;
+			text-align: left;
+			line-height: 140%;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code {
+			display: flex;
+			padding: 40px 0px 8px 0px;
+			align-items: flex-start;
+			gap: 24px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col {
+			display: flex;
+			width: 230px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 24px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col p.text-lp-paragraph {
+			align-self: stretch;
+			text-align: left;
+			color: var(--lp-folheto-SN--white-01);
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col .row {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay {
+			display: flex;
+			padding: 0px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay a {
+			text-decoration: none;
+			width: 100%;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay .supporting-text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay .supporting-text p.text-lp-label-default {
+			text-align: left;
+			align-self: stretch;
+			color: var(--lp-folheto-SN--gray-04);
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text 
+		.lp-folheto-AP--np-btn--qr-code .QrCode {
+			display: none;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row {
+			display: flex;
+			padding: 0px 0px 16px 0px;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 10px;
+			flex: 1 0 0;
+			margin-top: 88px;
+			border-radius: 24px;
+			border: 1px solid var(--lp-folheto-SN--gray-03);
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lp-folheto-nosso-pay-apoio {
+			width: 100%;
+			max-width: 240px;
+			height: auto;
+			margin-top: -72px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np {
+			display: flex;
+			padding: 16px 24px 32px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item svg {
+			width: 32px;
+			height: 32px;
+			margin-top: -4px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item .text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			flex: 1 0 0;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item .text p.text-lp-paragraph {
+			font-size: 16px;
+			font-family: Museo, sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 120%;
+			color: var(--lp-folheto-SN--gray-02);
+			align-self: stretch;
+			text-align: left;
+			margin-bottom: -6px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item .text p.text-lp-label-small {
+			align-self: stretch;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			color: var(--lp-folheto-SN--gray-03);
+			text-align: left;
+		}
+	/* nossas lojas */
+		.lp-folheto-AP--carousel--store--mobile {
+			display: flex;
+			padding: 64px 10% 200px 10%;
+			flex-direction: column;
+			align-items: center;
+			gap: 16px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--carousel--store--mobile .section--title-carousel--personalized {
+			display: flex;
+			padding-top: 32px;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .section--title-carousel--personalized .title {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			flex: 1 0 0;
+			align-self: stretch;
+			padding: 0 32px;
+		}
+		.lp-folheto-AP--carousel--store--mobile .section--title-carousel--personalized 
+		.title .text-lp-paragraph {
+			align-self: stretch;
+			font-family: Museo, sans-serif;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 20px;
+			color: var(--lp-folheto-SN--gray-01);
+		}
+		.lp-folheto-AP--carousel--store--mobile .row {
+			display: flex;
+			padding: 12px 0px;
+			justify-content: center;
+			align-items: center;
+			align-self: stretch;
+			gap: 8px;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			flex: 1 0 0;
+			overflow-x: auto;
+			scroll-behavior: smooth;
+			padding: 8px 0px;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens::-webkit-scrollbar {
+			display: none;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card {
+			display: 0 0 80%;
+			max-width: 296px;
+  			min-width: 280px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-radius: 12px;
+			border: 1px solid var(--lp-folheto-SN--gray-05);
+			background: var(--lp-folheto-SN--white-01);
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .image-store {
+			display: flex;
+			height: 136px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .image-store #lp-folheto-AP_image-store {
+			width: 280px;
+			height: 148px;
+			border-radius: 12px 12px 0 0;
+			background-size: 100% auto;
+        	background-position: center top;
+        	background-repeat: no-repeat;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .title {
+			display: flex;
+			padding: 24px 24px 0px 24px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .title .text-lp-paragraph {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 1;
+			text-transform: lowercase;
+			flex: 1 0 0;
+			overflow: hidden;
+			color: var(--lp-folheto-SN--gray-02);
+			text-overflow: ellipsis;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 20px; /* 125% */
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description {
+			display: flex;
+			padding: 16px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--address,
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--time {
+			display: flex;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--address svg,
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--time svg {
+			width: 24px;
+			height: 24px;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--address .text-lp-paragraph,
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--time .text-lp-paragraph {
+			flex: 1 0 0;
+			text-transform: lowercase;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 16px;
+			color: var(--lp-folheto-SN--gray-03);
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers {
+			display: flex;
+			padding: 12px 0px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers a {
+			text-decoration: none;
+			width: 100%;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers a .route {
+			border-radius: 8px;
+			border: 1px solid #BC272C;
+			background: var(--lp-folheto-SN--white-01);
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers a .route .text-lp-button-default {
+			color: var(--lp-folheto-SN--red-02);
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers a .wpp-sac {
+			border-radius: 8px;
+			background: var(--lp-folheto-SN--green-01);
+			align-self: stretch;
+			text-align: center;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .scrollLeft {
+			z-index: 9;
+	        min-width: 12px;
+	        min-height: 12px;
+	        max-height: 16px;
+	        max-width: 16px;
+	        display: flex;
+	        margin-left: -4px;
+	        margin-right: 4px;
+	        padding: 8px;
+	        cursor: pointer;
+	        border-radius: 999px !important;
+	        background: var(--lp-folheto-SN--white-01);
+	        border: 1px solid var(--lp-folheto-SN--gray-03) !important;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .scrollRight {
+			z-index: 9;
+	        min-width: 12px;
+	        min-height: 12px;
+	        max-height: 16px;
+	        max-width: 16px;
+	        display: flex;
+	        margin-right: -4px;
+	        margin-left: 4px;
+	        padding: 8px;
+	        cursor: pointer;
+	        border-radius: 999px !important;
+	        background: var(--lp-folheto-SN--white-01);
+	        border: 1px solid var(--lp-folheto-SN--gray-03) !important;
+		}
+		#lp-folheto-AP_address-store {
+			height: 40px;
+		}
+		#lp-folheto-AP_time-store {
+			height: 32px;
+		}
+	/* botão fixo */
+		.btn--bottom-bar {
+			z-index: 9999999999;
+			display: flex;
+			width: 100vw;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+			background: var(--lp-folheto-SN--white-01);
+			box-shadow: 0px -4px 6px 0px rgba(0, 0, 0, 0.25);
+			position: fixed;
+			bottom: 0;
+		}
+		.btn--bottom-bar .link--btn--bottom-bar {
+			text-decoration: none;
+			align-self: stretch;
+			padding: 5vw;
+		}
+		.btn--bottom-bar .link--btn--bottom-bar .lp-ap--btn-buy-site {
+			display: flex;
+			height: 40px;
+			min-width: 144px;
+			padding: 8px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+			border-radius: 8px;
+			border: 1px solid var(--lp-folheto-SN--red-01);
+			background: var(--lp-folheto-SN--red-01);
+		}
+		.btn--bottom-bar .link--btn--bottom-bar .lp-ap--btn-buy-site 
+		.text-btn--lp-ap--btn-buy-site {
+			color: var(--lp-folheto-SN--white-01);
+			text-align: center;
+			font-family: Museo, sans-serif;
+			font-size: 16px;
+			letter-spacing: 1px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 16px; /* 114.286% */
+		}
+}
+
+
+/*Mobile, breakpoint*/
+    @media (min-width: 200px) and (max-width: 767px) {       
+	/* header */
+        .lp-folheto-AP--header {
+        	display: flex;
+        	flex-direction: column;
+        	align-items: center;
+        	align-self: stretch;
+        }
+        .lp-folheto-AP--header .image {
+        	display: flex;
+	        height: 104px;
+	        padding: 0px 16px;
+	        flex-direction: column;
+	        justify-content: center;
+	        align-items: center;
+	        align-self: stretch;
+	        border-top: 1px solid var(--lp-folheto-SN--white-01);
+	        background: url(../imgs/pattern/lp-folheto-SN_pattern-banner-header.svg);
+	        background-size: 360% auto;
+	        background-position: center top;
+	        background-repeat: no-repeat;
+	        margin-bottom: -8px;
+        }
+        .lp-folheto-AP--header .image .content-banner {
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        	gap: 8px;
+        	flex: 1 0 0;
+        	align-self: stretch;
+        }
+        .lp-folheto-AP--header .image .content-banner img {
+        	width: 64px;
+        	height: auto;
+        }
+        .lp-folheto-AP--header .image .content-banner .title {
+        	display: flex;
+        	flex-direction: column;
+        	justify-content: center;
+        	align-items: flex-start;
+        	gap: 4px;
+        	flex: 1 0 0;
+        	align-self: stretch;
+        }
+        .lp-folheto-AP--header .image .content-banner .title .label {
+        	display: flex;
+        	justify-content: center;
+        	align-items: flex-start;
+        	gap: 8px;
+        	align-self: stretch;
+        }
+	/* block btn whatsapp */
+		.row--btn-whatsapp {
+			display: flex;
+			padding: 16px 24px;
+			align-items: center;
+			gap: 16px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-02)
+		}
+		.row--btn-whatsapp .text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			flex: 1 0 0;
+		}
+		.row--btn-whatsapp .text p.text-lp-paragraph {
+			align-self: stretch;
+		}
+		.row--btn-whatsapp a {
+			text-decoration: none;
+		}
+		.row--btn-whatsapp a .lp-folheto--btn-whatsapp {
+			display: flex;
+			padding: 8px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			border-radius: 8px;
+			background: var(--lp-folheto-SN--green-01);
+		}
+	/* block btn share file */
+		.row-share-file {
+			display: flex;
+			padding: 16px 24px;
+			align-items: center;
+			gap: 16px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-02)
+		}
+		.row-share-file .text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			flex: 1 0 0;
+		}
+		.row-share-file .text p.text-lp-paragraph {
+			align-self: stretch;
+		}
+		.row-share-file a {
+			text-decoration: none;
+		}
+		.row-share-file a .lp-folheto--btn-whatsapp {
+			display: flex;
+			padding: 8px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			border-radius: 8px;
+			border: 1px solid var(--lp-folheto-SN--red-02);
+			background: var(--lp-folheto-SN--red-02);
+		}
+		.row-share-file a .lp-folheto--btn-whatsapp--download {
+			display: flex;
+			padding: 8px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			border-radius: 8px;
+			border: 1px solid var(--lp-folheto-SN--gray-03);
+			background: var(--lp-folheto-SN--gray-03);
+		}
+	/* block ancoras */
+		.lp-folheto-AP--row-anchor {
+			display: flex;
+			padding: 24px 24px 16px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 12px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--row-anchor .col {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--row-anchor .col a {
+			text-decoration: none;
+			width: 100%;
+		}
+		.lp-folheto-AP--row-anchor .col a .sn--btn-mini {
+			display: flex;
+			height: 40px;
+			min-width: 52px;
+			padding: 0px 8px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			flex: 1 0 0;
+			border-radius: 8px;
+			border: 1px solid var(--lp-folheto-SN--gray-04);
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--row-anchor .col a .sn--btn-mini svg {
+			display: none;
+		}
+	/* folheto */
+		.section-folheto-body {
+			display: flex;
+			width: 100%;
+			padding: 16px 0px;
+			flex-direction: column;
+			align-items: center;
+			gap: 16px;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			margin: 0px;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn .cards-carrossel-folheto-loja-fisica-sn {
+			display: flex;
+		  	overflow-x: auto;
+		 	scroll-snap-type: x mandatory;
+		 	scrollbar-width: none;
+		  	-ms-overflow-style: none;
+		  	gap: 16px;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn .cards-carrossel-folheto-loja-fisica-sn .image-pagina-folheto-loja-fisica-sn {
+			width: auto;
+			height: auto;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn .cards-carrossel-folheto-loja-fisica-sn .image-pagina-folheto-loja-fisica-sn .page-folheto-image {
+			border-radius: 12px;
+			border: 1px solid var(--lp-folheto-SN--gray-04);
+			background: #FFF;
+			width: 80vw;
+			margin: 24px 0;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn .scrollLeft {
+			z-index: 9;
+			min-width: 16px;
+		  	min-height: 16px;
+		  	max-height: 40px;
+		  	max-width: 40px;
+		  	display: flex;
+			padding: 10px;
+			margin-left: 4px;
+			margin-right: -12px;
+			cursor: pointer;
+			border-radius: 999px!important;
+			background: var(--lp-folheto-SN--white-01);
+			border: 1px solid var(--lp-folheto-SN--gray-03)!important;
+		}
+		.section-folheto-body .slider-folheto-loja-fisica-sn .scrollRight {
+			z-index: 9;
+		  	min-width: 16px;
+		  	min-height: 16px;
+		  	max-height: 40px;
+		  	max-width: 40px;
+		  	display: flex;
+		  	margin-left: -12px;
+			margin-right: 4px;
+			padding: 10px;
+			cursor: pointer;
+			border-radius: 999px!important;
+			background: var(--lp-folheto-SN--white-01);
+			border: 1px solid var(--lp-folheto-SN--gray-03)!important;
+		}
+		.section-folheto-body .supporting-text {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			align-self: stretch;
+		}
+		.section-folheto-body .supporting-text p.text-lp-label-default {
+			color: var(--lp-folheto-SN--gray-03);
+			flex: 1 0 0;
+		}
+	/* video folheto */
+		.lp-folheto-AP--row-video-folheto {
+			display: flex;
+			padding: 32px 24px 48px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--row-video-folheto #lp-folheto-AP_VideoVT {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-self: stretch;
+			border-radius: 12px;
+		}
+		.lp-folheto-AP--row-video-folheto #lp-folheto-AP_VideoVT iframe {
+			width: 100%;
+			height: auto;
+			min-height: 180px;
+			border-radius: 12px;
+		}
+	/* clube supernosso */
+		.lp-folheto-AP--hero-image--title-content {
+			display: flex;
+			padding: 32px 24px 48px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 24px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--hero-image--title-content .image {
+			display: flex;
+			height: 184px;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 24px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .image .lp-folheto-AP--mockup-clube-ap {
+			width: 312px;
+			height: 210px;
+			flex-shrink: 0;
+			background: url('../imgs/png/bg-image--clube-ap-mockup.png');
+			background-size: 100% auto;
+        	background-position: center top;
+        	background-repeat: no-repeat;
+		}
+		.lp-folheto-AP--hero-image--title-content .text {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: flex-start;
+			gap: 24px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text .text {
+			display: flex;
+			padding-top: 8px;
+			flex-direction: row;
+			align-items: flex-start;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text .text p.text-lp-paragraph {
+			align-self: stretch;
+			color: var(--lp-folheto-SN--gray-03);
+			text-align: center;
+			font-size: 14px;
+			line-height: 140%;
+
+		}
+		.lp-folheto-AP--hero-image--title-content .text .text p.text-lp-paragraph span {
+			font-size: 14px;
+			line-height: 140%;
+			font-weight: 700;
+			color: var(--lp-folheto-SN--orange-01);
+		}
+		.lp-folheto-AP--hero-image--title-content .text .row--first-order-coupon {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			align-self: stretch;
+			border-radius: 12px;
+			border: 1px solid var(--lp-folheto-SN--orange-05);
+			background: var(--lp-folheto-SN--white-01);
+			box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+		}
+		.lp-folheto-AP--hero-image--title-content .text .row--first-order-coupon .col {
+			display: flex;
+			padding: 20px 16px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			border-radius: 12px 12px 0 0 ;
+			align-self: stretch;
+			border-bottom: 1px dashed var(--lp-folheto-SN--orange-05);
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 12px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .icon-image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .icon-image svg {
+			width: 40px;
+			height: 40px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .text h2.text-lp {
+			font-size: 20px;
+			color: var(--lp-folheto-SN--orange-01);
+			font-style: normal;
+			font-weight: 700;
+			line-height: 24px; /* 120% */
+			text-align: left;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .title .text p.text-lp-paragraph {
+			align-self: stretch;
+			font-size: 14px;
+			line-height: 140%;
+			color: var(--lp-folheto-SN--gray-02);
+			text-align: left;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon {
+			display: flex;
+			padding: 8px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+			border-radius: 8px;
+			border: 1px dashed var(--lp-folheto-SN--yellow-03);
+			background: var(--lp-folheto-SN--yellow-02);
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			flex: 1 0 0;
+			padding: 0;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text p.text-lp-paragraph {
+			color: var(--lp-folheto-SN--gray-03);
+			text-align: center;
+			padding-top: 4px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text h2.text-lp {
+			color: var(--lp-folheto-SN--gray-02);
+			font-family: Roboto, sans-serif;
+			text-align: center;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 20px; /* 125% */
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text a {
+			text-decoration: none;
+			padding: 0;
+			margin: 0;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .coupon .text a svg {
+			width: 24px;
+			height: 24px;
+			padding-bottom: 0px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .supporting-text {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col .supporting-text p.text-lp-label-default {
+			flex: 1 0 0;
+			line-height: 140%;
+			color: var(--lp-folheto-SN--gray-02);
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .col-qr-code {
+			display: none;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .btn-download {
+			display: flex;
+			padding: 12px 12px 16px 12px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 12px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .btn-download p.text-lp-paragraph {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 12px;
+			align-self: stretch;
+			flex: 1 0 0;
+			color: var(--lp-folheto-SN--gray-01);
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 16px; /* 114.286% */
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .btn-download .row {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+		.lp-folheto-AP--hero-image--title-content .text 
+		.row--first-order-coupon .btn-download .row svg {
+			width: 120px;
+			height: auto;
+		}
+	/* nosso pay */
+		.lp-folheto-AP--section-card-nosso-pay {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			align-self: stretch;
+			background-color: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--section-card-nosso-pay .lp-folheto-nosso-pay {
+			height: 224px;
+			align-self: stretch;
+			background: url('../imgs/png/mobile_card-bg.png');
+			background-size: 120% auto;
+        	background-position: center top;
+        	background-repeat: no-repeat;
+        	margin-bottom: -4px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content {
+			display: flex;
+			padding: 48px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+			background: linear-gradient(180deg, #9E1A2E 0%, #560A1B 100%);
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .text {
+			display: flex;
+			padding: 0px 24px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text h2.text-lp {
+			align-self: stretch;
+			text-align: center;
+			line-height: 140%;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text p.text-lp-paragraph {
+			align-self: stretch;
+			text-align: center;
+			line-height: 140%;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text .lp-folheto-AP--np-btn--qr-code {
+			display: flex;
+			padding: 32px 0px 8px 0px;
+			align-items: flex-start;
+			gap: 24px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text .lp-folheto-AP--np-btn--qr-code .col {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 24px;
+			flex: 1 0 0;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text .lp-folheto-AP--np-btn--qr-code .col p.text-lp-paragraph {
+			align-self: stretch;
+			color: var(--lp-folheto-SN--white-01);
+			text-align: center;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text .lp-folheto-AP--np-btn--qr-code .col .row {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text .lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 10px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text .lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay
+		a {
+			width: 100%;
+			text-decoration: none;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text .lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay
+		a .lp-folheto--btn-default {
+			display: flex;
+			height: 40px;
+			padding: 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+			border-radius: 8px;
+			background: var(--lp-folheto-SN--red-01);
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text .lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay
+		.supporting-text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text .lp-folheto-AP--np-btn--qr-code .col .row .lp-folheto--row-btn-nosso-pay
+		.supporting-text .text-lp-label-default {
+			align-self: stretch;
+			color: var(--lp-folheto-SN--gray-06);
+			text-align: center;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text .lp-folheto-AP--np-btn--qr-code .QrCode {
+			display: none;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content 
+		.text .lp-folheto-AP--np-btn--qr-code .col #lp-folheto-AP--btn-nosso-pay {
+			padding: 16px 0px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row {
+			display: flex;
+			padding: 64px 0px 16px 0px;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 10px;
+			flex: 1 0 0;
+			margin-top: 24px;
+			border-radius: 24px;
+			border: 1px solid var(--lp-folheto-SN--gray-03);
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lp-folheto-nosso-pay-apoio {
+			width: 100%;
+			max-width: 240px;
+			height: auto;
+			margin-top: -72px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np {
+			display: flex;
+			padding: 16px 24px 32px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item svg {
+			width: 32px;
+			height: 32px;
+			margin-top: -4px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item .text {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			flex: 1 0 0;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item .text p.text-lp-paragraph {
+			font-size: 16px;
+			font-family: Museo, sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 120%;
+			color: var(--lp-folheto-SN--gray-02);
+			align-self: stretch;
+			text-align: left;
+			margin-bottom: -6px;
+		}
+		.lp-folheto-AP--section-card-nosso-pay .content .row .card-vatagens-np
+		.lista-vantagens-np .vantagem-np-list-item .text p.text-lp-label-small {
+			align-self: stretch;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			color: var(--lp-folheto-SN--gray-03);
+			text-align: left;
+		}
+	/* nossas lojas */
+		.lp-folheto-AP--carousel--store--mobile {
+			display: flex;
+			padding: 40px 8px 120px 8px;
+			flex-direction: column;
+			align-items: center;
+			gap: 16px;
+			align-self: stretch;
+			background: var(--lp-folheto-SN--gray-06);
+		}
+		.lp-folheto-AP--carousel--store--mobile .section--title-carousel--personalized {
+			display: flex;
+			padding-top: 32px;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .section--title-carousel--personalized .title {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			flex: 1 0 0;
+			align-self: stretch;
+			padding: 0 32px;
+		}
+		.lp-folheto-AP--carousel--store--mobile .section--title-carousel--personalized 
+		.title .text-lp-paragraph {
+			align-self: stretch;
+			font-family: Museo, sans-serif;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 20px;
+			color: var(--lp-folheto-SN--gray-01);
+		}
+		.lp-folheto-AP--carousel--store--mobile .row {
+			display: flex;
+			padding: 12px 0px;
+			justify-content: center;
+			align-items: center;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			flex: 1 0 0;
+			overflow-x: auto;
+			scroll-behavior: smooth;
+			padding: 8px 0;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card {
+			display: 0 0 80%;
+			max-width: 296px;
+  			min-width: 264px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-radius: 12px;
+			border: 1px solid var(--lp-folheto-SN--gray-05);
+			background: var(--lp-folheto-SN--white-01);
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .image-store {
+			display: flex;
+			height: 136px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .image-store #lp-folheto-AP_image-store {
+			width: 264px;
+			height: 148px;
+			border-radius: 12px 12px 0 0;
+			background-size: 100% auto;
+        	background-position: center top;
+        	background-repeat: no-repeat;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .title {
+			display: flex;
+			padding: 24px 24px 0px 24px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .title .text-lp-paragraph {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 1;
+			text-transform: lowercase;
+			flex: 1 0 0;
+			overflow: hidden;
+			color: var(--lp-folheto-SN--gray-02);
+			text-overflow: ellipsis;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 20px; /* 125% */
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description {
+			display: flex;
+			padding: 16px 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--address,
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--time {
+			display: flex;
+			align-items: flex-start;
+			gap: 8px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--address svg,
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--time svg {
+			width: 24px;
+			height: 24px;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--address .text-lp-paragraph,
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .row--time .text-lp-paragraph {
+			flex: 1 0 0;
+			text-transform: lowercase;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 16px;
+			color: var(--lp-folheto-SN--gray-03);
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers {
+			display: flex;
+			padding: 12px 0px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers a {
+			text-decoration: none;
+			width: 100%;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers a .route {
+			border-radius: 8px;
+			border: 1px solid #BC272C;
+			background: var(--lp-folheto-SN--white-01);
+			align-self: stretch;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers a .route .text-lp-button-default {
+			color: var(--lp-folheto-SN--red-02);
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .carousel-itens 
+		.avaliable-store--card .description .contact-numbers a .wpp-sac {
+			border-radius: 8px;
+			background: var(--lp-folheto-SN--green-01);
+			align-self: stretch;
+			text-align: center;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .scrollLeft {
+			z-index: 9;
+	        min-width: 12px;
+	        min-height: 12px;
+	        max-height: 16px;
+	        max-width: 16px;
+	        display: flex;
+	        margin-left: -4px;
+	        margin-right: 4px;
+	        padding: 8px;
+	        cursor: pointer;
+	        border-radius: 999px !important;
+	        background: var(--lp-folheto-SN--white-01);
+	        border: 1px solid var(--lp-folheto-SN--gray-03) !important;
+		}
+		.lp-folheto-AP--carousel--store--mobile .row .scrollRight {
+			z-index: 9;
+	        min-width: 12px;
+	        min-height: 12px;
+	        max-height: 16px;
+	        max-width: 16px;
+	        display: flex;
+	        margin-right: -4px;
+	        margin-left: 4px;
+	        padding: 8px;
+	        cursor: pointer;
+	        border-radius: 999px !important;
+	        background: var(--lp-folheto-SN--white-01);
+	        border: 1px solid var(--lp-folheto-SN--gray-03) !important;
+		}
+		#lp-folheto-AP_address-store {
+			height: 40px;
+		}
+		#lp-folheto-AP_time-store {
+			height: 32px;
+		}
+	/* botao fixo */
+		.btn--bottom-bar {
+			z-index: 9999999999;
+			display: flex;
+			width: 100vw;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+			background: var(--lp-folheto-SN--white-01);
+			box-shadow: 0px -4px 6px 0px rgba(0, 0, 0, 0.25);
+			position: fixed;
+			bottom: 0;
+			left: 0;
+		}
+		.btn--bottom-bar .link--btn--bottom-bar {
+			text-decoration: none;
+			align-self: stretch;
+			padding: 5vw;
+		}
+		.btn--bottom-bar .link--btn--bottom-bar .lp-ap--btn-buy-site {
+			display: flex;
+			height: 40px;
+			min-width: 144px;
+			padding: 8px 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			align-self: stretch;
+			border-radius: 8px;
+			border: 1px solid var(--lp-folheto-SN--red-01);
+			background: var(--lp-folheto-SN--red-01);
+		}
+		.btn--bottom-bar .link--btn--bottom-bar .lp-ap--btn-buy-site 
+		.text-btn--lp-ap--btn-buy-site {
+			color: var(--lp-folheto-SN--white-01);
+			text-align: center;
+			font-family: Museo, sans-serif;
+			letter-spacing: 1px;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 16px; /* 114.286% */
+		}
+}
