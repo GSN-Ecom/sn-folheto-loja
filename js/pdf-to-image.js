@@ -484,10 +484,10 @@ function carregarStores() {
                             <p id=lp-folheto-AP_time-store class="text-lp-paragraph">${row[3]}</p>
                         </div>
                         <div class="contact-numbers">
-                            <a id=lp-folheto-AP_route-store href="${row[4]}">
+                            <a target="_blank" id=lp-folheto-AP_route-store href="${row[4]}">
                                 <div class="lp-folheto--btn-default route"><p class="text-lp-button-default">traçar rota</p></div>
                             </a>
-                            <a id=lp-folheto-AP_wpp-store href="${row[5]}">
+                            <a target="_blank" id=lp-folheto-AP_wpp-store href="${row[5]}">
                                 <div class="lp-folheto--btn-default wpp-sac"><p class="text-lp-button-default">whatsapp</p></div>
                             </a>
                         </div>
